@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(185, 41%, 84%);
+}
+
+main {
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+
+.tip-label.selected {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.main-container {
+    display: flex;
+    width: 50rem;
+    height: 30rem;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.title {
+    color: hsl(183, 81%, 22%);
+}
+
+label {
+    color: hsl(183, 78%, 27%);
+    font-weight: bold;
+
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 50%;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: hsl(184, 41%, 93%);
+    border: none;
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="number"] {
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border: 2px solid hsl(186, 14%, 43%);
+}
+
+label[for="tip-5"],
+label[for="tip-10"],
+label[for="tip-15"],
+label[for="tip-25"],
+label[for="tip-50"] {
+    height: 3rem;
+    width: 6rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input[id="custom-tip"] {
+    height: 3rem;
+    width: 6rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 0;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+
+
+}
+
+.tips {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+.input-container {
+    position: relative;
+}
+
+#bill-amount {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    text-align: right;
+}
+
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-110%);
+}
+
+.outer-container {
+    width: 23rem;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    align-items: center;
+
+}
+
+.tipPer,
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tipPer h2,
+.total h2 {
+    font-size: small;
+}
+
+.silver {
+    color: hsl(185, 41%, 84%);
+}
+
+.tip,
+.totalPer {
+    color: hsl(184, 14%, 56%);
+    font-size: xx-large;
+    font-weight: 700
+}
+
+.reset {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 5px;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(184, 14%, 56%);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.reset:hover {
+    background-color: rgb(216, 211, 211);
+    cursor: pointer;
+}
+
+@media (min-width:375px) and (max-width:890px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        width: 100vw;
+
+    }
+
+    .left-side {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .outer-container {
+        width: 100vw;
+    }
+
+}
